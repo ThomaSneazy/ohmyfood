@@ -54,6 +54,54 @@ nav {
   text-decoration: none;
 }
 
+.function-list_section {
+  padding: 1.2rem;
+}
+
+.function-list-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.function-list-item .list-content {
+  display: flex;
+  align-items: center;
+  padding: 1.8rem;
+  background: #F7F7F7;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+}
+.function-list-item .list-content .function-text-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: black;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.function-list-item .list-content .function-text-content i {
+  font-size: 1.2rem;
+  color: #7E7E7E;
+}
+.function-list-item a {
+  text-decoration: none;
+}
+.function-list-item .number-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: -0.7rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: white;
+  background-color: #9356DC;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 100px;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
