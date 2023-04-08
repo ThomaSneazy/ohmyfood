@@ -1,3 +1,5 @@
+@import "../utils/box-shadow.scss";
+
 .function-list_section{
   padding: 1.2rem;
 }
@@ -13,8 +15,23 @@
     align-items: center;
     padding: 1.8rem;
     background: #F7F7F7;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
+    @include base-shadow;
+
+    &:hover{
+      .function_icon{
+        opacity: 1;
+        transform: scale(1.1);
+        transition: ease-in-out 100ms;
+        background-color: #9356DC;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+      background-color: #f2eafb;
+      @include hover-shadow;
+    }
+  }
 
     .function-text-content{
       display: flex;
@@ -27,8 +44,9 @@
         font-size: 1.2rem;
         color: #7E7E7E;
       }
+
     }
-  }
+
     & a{
       text-decoration: none;
     }
@@ -46,4 +64,5 @@
     width: 1.5rem;
     border-radius: 100px;
   }
+
 }
