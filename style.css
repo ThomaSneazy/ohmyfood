@@ -11,6 +11,10 @@ body {
   padding: 0;
 }
 
+ul, li {
+  list-style-type: none;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -148,6 +152,9 @@ nav {
   -webkit-background-clip: text;
   color: transparent;
 }
+.restaurants_section a {
+  width: 100%;
+}
 
 .function-list_section {
   padding: 1.2rem;
@@ -210,6 +217,44 @@ nav {
   height: 1.5rem;
   width: 1.5rem;
   border-radius: 100px;
+}
+
+footer {
+  background-color: #353535;
+  padding: 1.4rem;
+}
+footer a {
+  color: white;
+}
+footer h3 {
+  font-family: "Shrikhand";
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+.list-item {
+  display: flex;
+}
+
+.list-item-link {
+  display: flex;
+}
+.list-item-link .fa-utensils {
+  margin-right: 0.9rem;
+}
+.list-item-link .fa-handshake-angle {
+  margin-right: 0.5rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
