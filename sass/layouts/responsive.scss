@@ -1,0 +1,25 @@
+@media only screen and (min-device-width : 768px) and (max-device-width : 1440px) {
+
+  .restaurants_section{
+    .restaurant-card_container{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      gap: 1rem;
+    }
+  }
+
+
+  .function-list-item{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 1rem;
+    .function-text-content{
+      white-space: nowrap;
+    }
+  }
+
+}

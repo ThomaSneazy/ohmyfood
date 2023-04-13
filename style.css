@@ -20,6 +20,33 @@ a {
   color: black;
 }
 
+#page-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: fadeOut;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  opacity: 1;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
 nav {
   text-align: center;
   padding: 1rem;
@@ -146,7 +173,7 @@ nav {
 .restaurants_section .card-item .fas:hover {
   opacity: 1;
   transform: scale(1.2);
-  transition: ease-in-out 100ms;
+  transition: ease-in-out 200ms;
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -286,8 +313,8 @@ footer ul {
   object-fit: cover;
   position: relative;
   width: 100%;
-  height: auto;
   z-index: -1;
+  max-height: 16rem;
 }
 
 .menu-container {
@@ -348,7 +375,8 @@ footer ul {
 
 .container-menu-restaurants h2 {
   font-weight: 300;
-  text-transform: capitalize;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   font-size: 1rem;
   margin-bottom: 0.2rem;
 }
@@ -357,19 +385,22 @@ footer ul {
   flex-direction: column;
   align-items: flex-start;
   gap: 0;
-  margin-bottom: 1rem;
 }
 .container-menu-restaurants .container-h2 .separator {
   background-color: #99E2D0;
-  width: 13%;
+  width: 2.5rem;
+  max-width: 3rem;
   height: 4px;
 }
 .container-menu-restaurants .container-dishes {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin-bottom: 2rem;
 }
 .container-menu-restaurants .container-dishes .card-dishes {
+  white-space: nowrap;
+  position: relative;
   display: flex;
   align-items: end;
   justify-content: space-between;
@@ -382,6 +413,10 @@ footer ul {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.347);
   transition: 200ms ease;
   transform: scale(1.01);
+  border-right: solid #99E2D0 4rem;
+}
+.container-menu-restaurants .container-dishes .card-dishes:hover .menu_check {
+  opacity: 1;
 }
 .container-menu-restaurants .container-dishes .card-dishes .text-card-restaurants {
   display: flex;
@@ -389,7 +424,7 @@ footer ul {
 }
 .container-menu-restaurants .container-dishes .card-dishes .text-card-restaurants h3 {
   font-weight: 500;
-  font-size: 1.125rem;
+  font-size: 1rem;
   margin: 0;
   padding: 0;
 }
@@ -401,6 +436,36 @@ footer ul {
 }
 .container-menu-restaurants .container-dishes .card-dishes .price {
   font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.menu_check {
+  font-size: 2rem;
+  color: white;
+  opacity: 0;
+  position: absolute;
+  top: 1.8rem;
+  right: -2.8rem;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1440px) {
+  .restaurants_section .restaurant-card_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    gap: 1rem;
+  }
+  .function-list-item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 1rem;
+  }
+  .function-list-item .function-text-content {
+    white-space: nowrap;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

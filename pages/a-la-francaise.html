@@ -4,138 +4,157 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-  <title>Palette du goût</title>
+  <title>À la Française</title>
 </head>
 <body>
   <header>
-    <nav class="navbar_container">
+    <nav class="navbar_container-restaurant">
       <a href="/pages/index.html">
         <i class="fa-solid fa-arrow-left"></i>
       </a>
       <img src="../assets/images/logo/ohmyfood.png" alt="">
     </nav>
-    <div class="hero_section">
-      <div class="hero_section-content">
-        <img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg">
+    <div class="hero_section-restaurant">
+      <div class="hero_section-content-restaurant">
+        <img src="../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
       </div>
     </div>
   </header>
 
-  <section>
-    <h1 class="h1-hero-section-restaurant-style">La palette du goût</h1>
-    <i class="fa-regular fa-heart"></i>
-
+  <section class="menu-container">
+    <div class="h1-container-restaurant">
+      <h1 class="h1-hero-section-restaurant-style">À la Française</h1>
+        <i class="far fa-heart"></i>
+        <i class="fas fa-heart"></i>
+    </div>
       <div class="container-menu-restaurants">
         <div class="container-dishes">
-          <h2>ENTRÉES</h2>
+          <div class="container-h2">
+            <h2>ENTRÉES</h2>
+            <div class="separator"></div>
+            </div>
           <a href="#">
             <div class="card-dishes">
               <div class="text-card-restaurants">
-                <span>Fricassée d'escargots</span><br>
-                <span>Au piment d'Espelette</span>
+                <h3>Tartare de poulpe acidulé</h3><br>
+                <p>Aux zestes d'orange</p>
               </div>
-              <span>25€</span>
+              <span class="price">25€</span>
+                <i class="fas fa-check-circle menu_check"></i>
             </div>
           </a>
           <a href="#">
             <div class="card-dishes">
               <div class="text-card-restaurants">
-                <span>Foie gras de canard mi-cuit</span><br>
-                <span>Et ses copeaux de truffe noire</span>
+                <h3>Velouté de légumes d'antan</h3><br>
+                <p>Carotte, panais, topinambour</p>
               </div>
-              <span>35€</span>
+              <span class="price">35€</span>
+              <i class="fas fa-check-circle menu_check"></i>
             </div>
           </a>
           <a href="#">
             <div class="card-dishes">
               <div class="text-card-restaurants">
-                <span>Œuf au plat</span><br>
-                <span>Assaisonné à la truffe sur lit de caviar</span>
+                <h3>Soupe à l'oignon</h3><br>
+                <p>Revisitée</p>
               </div>
-              <span>20€</span>
-            </div>
-          </a>
-        </div>
-        <div class="container-dishes">
-          <h2>PLATS</h2>
-          <a href="">
-            <div class="card-dishes">
-              <div class="text-card-restaurants">
-                <span>Filet de bœuf aux herbes</span><br>
-                <span>Accompagné de sa ribambelle de légumes</span>
-              </div>
-              <span>40€</span>
-            </div>
-          </a>
-          <a href="#">
-            <div class="card-dishes">
-              <div class="text-card-restaurants">
-                <span>Parmentier de queue de bœuf</span><br>
-                <span>À la truffe noire sur sa purée de panais</span>
-              </div>
-              <span>35€</span>
-            </div>
-          </a>
-          <a href="#">
-            <div class="card-dishes">
-              <div class="text-card-restaurants">
-                <span>Filet de turbot</span><br>
-                <span>Aux agrumes</span>
-              </div>
-              <span>44€</span>
+              <span class="price">20€</span>
+              <i class="fas fa-check-circle menu_check"></i>
             </div>
           </a>
         </div>
         <div class="container-dishes">
-          <h2>DESSERTS</h2>
+          <div class="container-h2">
+            <h2>plats</h2>
+            <div class="separator"></div>
+            </div>
           <a href="#">
             <div class="card-dishes">
               <div class="text-card-restaurants">
-                <span>Paris-Brest</span><br>
-                <span>Revisité</span>
+                <h3>Coquilles Saint-Jacques</h3><br>
+                <p>Accompagnées d'une purée de panais</p>
               </div>
-              <span>18€</span>
+              <span class="price">40€</span>
             </div>
           </a>
           <a href="#">
             <div class="card-dishes">
               <div class="text-card-restaurants">
-                <span>Revisité</span><br>
-                <span>Et glace à la vanille de Madagascar</span>
+                <h3>Magret de canard</h3><br>
+                <p>Et parmentier de pommes de terre</p>
               </div>
-              <span>22€</span>
+              <span class="price">35€</span>
             </div>
           </a>
           <a href="#">
             <div class="card-dishes">
               <div class="text-card-restaurants">
-                <span>Mousse au chocolat </span><br>
-                <span>Au piment d'Espelette et à la truffe noire</span>
+                <h3>Pigeonneau d’Ille-et-Vilaine</h3><br>
+                <p>Sur son lit de gnocchis aux légumes</p>
               </div>
-              <span>23€</span>
+              <span class="price">44€</span>
+            </div>
+          </a>
+        </div>
+        <div class="container-dishes">
+          <div class="container-h2">
+            <h2>desserts</h2>
+            <div class="separator"></div>
+            </div>
+          <a href="#">
+            <div class="card-dishes">
+              <div class="text-card-restaurants">
+                <h3>Pétales de violettes glacés</h3><br>
+                <p>Et purée de noisettes</p>
+              </div>
+              <span class="price">16€</span>
+            </div>
+          </a>
+          <a href="#">
+            <div class="card-dishes">
+              <div class="text-card-restaurants">
+                <h3>Fondant au chocolat</h3><br>
+                <p>Revisité</p>
+              </div>
+              <span class="price">22€</span>
+            </div>
+          </a>
+          <a href="#">
+            <div class="card-dishes">
+              <div class="text-card-restaurants">
+                <h3>Millefeuille croustillant</h3><br>
+                <p>Myrtilles et pâte d’amande</p>
+              </div>
+              <span class="price">23€</span>
             </div>
           </a>
         </div>
       </div>
-      <button>Commander</button>
+
+      <div class="container-button">
+        <button>Commander</button>
+      </div>
   </section>
   <footer>
-    <img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" alt="">
+    <a href="">
+      <h3>
+      ohmyfood
+      </h3>
+    </a>
     <ul class="list">
       <li class="list-item">
-        <img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" alt="">
-        <a href="#"><div class="list-item-link">Proposer un restaurant</div></a>
+        <a href="#"><div class="list-item-link"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</div></a>
       </li>
       <li class="list-item">
-        <img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" loading="lazy" alt="">
-        <a href="#"><div class="list-item-link">Devenir partenaire</div></a>
+        <a href="#"><div class="list-item-link"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</div></a>
       </li>
       <li class="list-item">
         <a href="#"><div class="list-item-link">Mention légales</div></a>
