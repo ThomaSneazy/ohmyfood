@@ -1,16 +1,16 @@
 @import "../utils/box-shadow.scss";
 
-.function-list_section{
+.function-list_section {
   padding: 1.2rem;
 }
 
-.function-list-item{
+.function-list-item {
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 
-  .list-content{
+  .list-content {
     display: flex;
     align-items: center;
     padding: 1.8rem;
@@ -18,8 +18,8 @@
     border-radius: 20px;
     @include base-shadow;
 
-    &:hover{
-      .function_icon{
+    &:hover {
+      .function_icon {
         opacity: 1;
         transform: scale(1.1);
         transition: ease-in-out 100ms;
@@ -28,29 +28,32 @@
         -webkit-background-clip: text;
         color: transparent;
       }
+
       background-color: #f2eafb;
       @include hover-shadow;
     }
   }
 
-    .function-text-content{
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      color: black;
-      font-size: 1rem;
-      font-weight: 500;
-      & i{
-        font-size: 1.2rem;
-        color: #7E7E7E;
-      }
+  .function-text-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
 
+    & i {
+      font-size: 1.2rem;
+      color: #7E7E7E;
     }
 
-    & a{
-      text-decoration: none;
-    }
-  .number-content{
+  }
+
+  & a {
+    text-decoration: none;
+  }
+
+  .number-content {
     display: flex;
     align-items: center;
     justify-content: center;

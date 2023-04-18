@@ -1,28 +1,31 @@
-.navbar_container-restaurant{
+.navbar_container-restaurant {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  & img{
+
+  & img {
     position: relative;
     cursor: pointer;
     width: 50%;
   }
-  & a{
+
+  & a {
     position: absolute;
     left: 1rem;
     font-size: 1.3rem;
   }
 }
 
-.hero_section-restaurant{
+.hero_section-restaurant {
   margin: 0;
   padding: 0;
 }
 
-.hero_section-content-restaurant{
+.hero_section-content-restaurant {
   width: 100%;
-  & img{
+
+  & img {
     object-fit: cover;
     position: relative;
     width: 100%;
@@ -31,30 +34,35 @@
   }
 }
 
-.menu-container{
+.menu-container {
   padding: 1rem;
   background-color: #F7F7F7;
   border-radius: 2rem;
   z-index: 0;
   margin-top: -2rem;
-  .h1-container-restaurant{
+
+  .h1-container-restaurant {
     display: flex;
     align-items: center;
-    & h1{
+
+    & h1 {
       font-size: 1.5rem;
       font-family: 'Shrikhand';
       font-weight: 400;
     }
-    & i{
+
+    & i {
       font-size: 1.4rem;
       color: black;
       position: absolute;
       right: 1rem;
       cursor: pointer;
     }
-    .fas{
+
+    .fas {
       opacity: 0;
-      &:hover{
+
+      &:hover {
         opacity: 1;
         transform: scale(1.2);
         transition: ease-in-out 100ms;
@@ -65,11 +73,13 @@
       }
     }
   }
-  .container-button{
+
+  .container-button {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
-    button{
+
+    button {
       background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
       border-radius: 50px;
       padding: 1rem 1.5rem 1rem 1.5rem;
@@ -78,27 +88,30 @@
       border: none;
       cursor: pointer;
       @include base-shadow;
-      &:hover{
+
+      &:hover {
         @include hover-shadow;
       }
     }
   }
 }
 
-.container-menu-restaurants{
-  & h2{
+.container-menu-restaurants {
+  & h2 {
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 1rem;
     margin-bottom: 0.2rem;
   }
-  .container-h2{
+
+  .container-h2 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 0;
-    .separator{
+
+    .separator {
       background-color: #99E2D0;
       width: 2.5rem;
       max-width: 3rem;
@@ -106,57 +119,140 @@
     }
   }
 
-  .container-dishes{
+  .container-dishes-entree {
+    opacity: 0;
+    animation: fade-in 0.4s ease-out 1.5s forwards;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     margin-bottom: 2rem;
-    .card-dishes{
-      white-space: nowrap;
-      position: relative;
-      display: flex;
-      align-items: end;
-      justify-content: space-between;
-      padding: 1rem;
-      background-color: white;
-      border-radius: 1rem;
-      @include base-shadow;
-      &:hover{
-        @include hover-shadow;
-        border-right: solid #99E2D0 4rem;
-        .menu_check{
-          opacity: 1;
+
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
   }
+
+  .card-dishes {
+    position: relative;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    @include base-shadow;
+
+    .container-check {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #99E2D0;
+      color: white;
+      font-size: 1.5rem;
+      position: absolute;
+      right: 0;
+      height: 100%;
+      width: 0;
+      top: 0;
+      border-radius: 0 1rem 1rem 0;
+      opacity: 0;
+    }
+
+    &:hover {
+      @include hover-shadow;
+
+      .fa-check-circle {
+        transform: rotate(360deg);
+        transition: 500ms ease;
       }
-      .text-card-restaurants{
+
+      .price {
+        margin-right: 4rem;
+        transition: 300ms ease;
+      }
+
+      .container-check {
+        transition: 300ms ease;
         display: flex;
-        flex-direction: column;
-        & h3{
-          font-weight: 500;
-          font-size: 1rem;
-          margin: 0;
-          padding: 0;
-        }
-        & p{
-          padding: 0;
-          margin: 0;
-          font-size: 0.9rem;
-          font-weight: 300;
-        }
+        width: 4rem;
+        opacity: 1;
       }
-      .price{
-        font-weight: 600;
-        font-size: 0.8rem;
-      }
+    }
+  }
+
+  .text-card-restaurants {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    overflow: hidden;
+
+    & h3 {
+      font-weight: 500;
+      font-size: 1rem;
+      margin: 0;
+      padding: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    & p {
+      padding: 0;
+      margin: 0;
+      font-size: 0.9rem;
+      font-weight: 300;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .price {
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+}
+
+.container-dishes-plat {
+  opacity: 0;
+  animation: fade-in 0.4s ease-out 3s forwards;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
     }
   }
 }
 
-.menu_check{
-  font-size: 2rem;
-  color: white;
+.container-dishes-dessert {
   opacity: 0;
-  position: absolute;
-  top: 1.8rem;
-  right: -2.8rem;
+  animation: fade-in 0.4s ease-out 4s forwards;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
 }

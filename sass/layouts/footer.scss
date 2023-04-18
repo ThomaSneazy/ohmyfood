@@ -1,36 +1,41 @@
-footer{
+footer {
   background-color: #353535;
   padding: 1.4rem;
-  & a{
+
+  & a {
     color: white;
   }
-  & h3{
+
+  & h3 {
     font-family: 'Shrikhand';
     color: white;
     font-size: 1.2rem;
     font-weight: 400;
   }
-  & ul{
+
+  & ul {
     margin: 0;
     padding: 0;
   }
 }
 
-.list-item{
+.list-item {
   display: flex;
 }
 
-.list-item-link{
+.list-item-link {
   display: flex;
-  .fa-utensils{
+
+  .fa-utensils {
     margin-right: 0.9rem;
   }
-  .fa-handshake-angle{
+
+  .fa-handshake-angle {
     margin-right: 0.5rem;
   }
 }
 
-.list{
+.list {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
