@@ -1,10 +1,15 @@
 @media only screen and (min-device-width : 768px) {
-
+  .number-content{
+    display: flex;
+  }
   .function-list_section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    & a{
+      position: relative;
+    }
 
     .function-list-item {
       flex-direction: row;
@@ -16,11 +21,6 @@
         width: -moz-available;
         max-width: 320px;
       }
-
-      .number-content {
-        display: none;
-      }
-
       .function-text-content {
         white-space: nowrap;
       }

@@ -512,11 +512,17 @@ footer ul {
 }
 
 @media only screen and (min-device-width: 768px) {
+  .number-content {
+    display: flex;
+  }
   .function-list_section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .function-list_section a {
+    position: relative;
   }
   .function-list_section .function-list-item {
     flex-direction: row;
@@ -527,9 +533,6 @@ footer ul {
   .function-list_section .function-list-item .list-content {
     width: -moz-available;
     max-width: 320px;
-  }
-  .function-list_section .function-list-item .number-content {
-    display: none;
   }
   .function-list_section .function-list-item .function-text-content {
     white-space: nowrap;
