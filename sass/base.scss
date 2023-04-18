@@ -33,10 +33,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation-name: fadeOut;
-  animation-duration: 3s;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
+  animation: fadeOut 3s ease-in forwards;
   opacity: 1;
 }
 
