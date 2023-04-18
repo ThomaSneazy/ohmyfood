@@ -1,24 +1,102 @@
-@media only screen and (min-device-width : 768px) and (max-device-width : 1440px) {
+@media only screen and (min-device-width : 768px) {
+
+  .function-list_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .function-list-item{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    .list-content{
+      width: -moz-available;
+      max-width: 320px;
+    }
+    .number-content{
+      display: none;
+    }
+    .function-text-content{
+      white-space: nowrap;
+    }
+  }
 
   .restaurants_section{
     .restaurant-card_container{
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
-      grid-column-gap: 0px;
-      grid-row-gap: 0px;
       gap: 1rem;
     }
   }
 
+// .container{
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
 
-  .function-list-item{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    gap: 1rem;
-    .function-text-content{
-      white-space: nowrap;
+//   .function-list_section{
+//     // padding: 2rem 10rem 2rem 10rem;
+//     .function-list-item{
+//       flex-direction: row;
+//       justify-content: center;
+//       .number-content{
+//         display: none;
+//       }
+//       .list-content{
+//         max-width: 320px;
+//         padding: 1.5rem 0.7rem 1.5rem 0.7rem;
+//       }
+//     }
+//   }
+
+//   .restaurants_section{
+//     // padding: 2rem 10rem 2rem 10rem;
+//     .restaurant-card_container{
+//       width: 100%;
+//       display: grid;
+//       grid-template-columns: repeat(2, 1fr);
+//       grid-template-rows: repeat(2, 1fr);
+//       grid-column-gap: 0px;
+//       grid-row-gap: 0px;
+//       gap: 3rem;
+//     }
+//     .card-item{
+//       max-width: 490px;
+//     }
+//   }
+
+//   .menu-container{
+//     margin-left: 10rem;
+//     margin-right: 10rem;
+//     max-width: 1055px;
+//     border-radius: 2rem 2rem 0 0;
+//     .h1-container-restaurant{
+//       & i{
+//       right: 12rem;
+//       }
+//     }
+//   }
+
+
+  footer{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    & h3{
+      padding-left: 6rem;
+    }
+    & .list{
+      align-items: center;
+      flex-direction: row;
+    }
+    & li{
+      padding: 1rem;
     }
   }
 

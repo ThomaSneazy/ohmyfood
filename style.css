@@ -150,7 +150,6 @@ nav {
 .restaurants_section .card-item .card-container-content {
   padding: 1rem;
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 .restaurants_section .card-item .text-block-2 {
@@ -293,7 +292,7 @@ footer ul {
 .navbar_container-restaurant img {
   position: relative;
   cursor: pointer;
-  width: 70%;
+  width: 50%;
 }
 .navbar_container-restaurant a {
   position: absolute;
@@ -448,23 +447,50 @@ footer ul {
   right: -2.8rem;
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1440px) {
+@media only screen and (min-device-width: 768px) {
+  .function-list_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .function-list-item {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .function-list-item .list-content {
+    width: -moz-available;
+    max-width: 320px;
+  }
+  .function-list-item .number-content {
+    display: none;
+  }
+  .function-list-item .function-text-content {
+    white-space: nowrap;
+  }
   .restaurants_section .restaurant-card_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
     gap: 1rem;
   }
-  .function-list-item {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    gap: 1rem;
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
   }
-  .function-list-item .function-text-content {
-    white-space: nowrap;
+  footer h3 {
+    padding-left: 6rem;
+  }
+  footer .list {
+    align-items: center;
+    flex-direction: row;
+  }
+  footer li {
+    padding: 1rem;
   }
 }
 
