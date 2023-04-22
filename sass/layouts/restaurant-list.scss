@@ -1,9 +1,11 @@
 @import "../utils/box-shadow.scss";
 @import "../utils/hover-shadow.scss";
+@import "../utils/variables.scss";
+
 
 .restaurants_section {
   padding: 1.2rem;
-  background-color: rgb(235, 235, 235);
+  background-color: $grey;
 
   .restaurant-card_container {
     display: flex;
@@ -16,8 +18,9 @@
     min-width: 17rem;
     position: relative;
     border-radius: 1rem;
-    background-color: white;
+    background-color: $white;
     @include base-shadow;
+    transition: ease-in-out 200ms;
 
     &:hover {
       @include hover-shadow;
@@ -37,7 +40,7 @@
       color: #008766;
       padding: 0.5rem;
       border-radius: 2px;
-      background-color: #99E2D0;
+      background-color: $green;
     }
 
     .card-container-content {
@@ -58,7 +61,7 @@
 
     & i {
       font-size: 1.4rem;
-      color: black;
+      color: $black;
       position: absolute;
       right: 1rem;
     }
@@ -70,7 +73,7 @@
         opacity: 1;
         transform: scale(1.2);
         transition: ease-in-out 200ms;
-        background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+        background: linear-gradient(193.33deg, $purple -11.44%, $pink 123.93%);
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;

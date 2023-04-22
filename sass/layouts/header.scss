@@ -1,5 +1,7 @@
 @import "../utils/box-shadow.scss";
 @import "../utils/hover-shadow.scss";
+@import "../utils/variables.scss";
+
 
 nav {
   text-align: center;
@@ -11,7 +13,7 @@ nav {
   box-shadow: inset 0px 14px 15px -7px rgba(0, 0, 0, 0.28);
   display: flex;
   justify-content: center;
-  background-color: #DFDFDF;
+  background-color: $grey;
   padding: 1rem;
 
   .text-city {
@@ -24,7 +26,7 @@ nav {
 .hero_section {
   padding-top: 2.5rem;
   padding-bottom: 3rem;
-  background-color: rgb(235, 235, 235);
+  background-color: $white;
 }
 
 .hero_section-content {
@@ -54,10 +56,11 @@ nav {
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   border-radius: 50px;
   padding: 1rem 1.5rem 1rem 1.5rem;
-  color: white;
+  color: $white;
   font-size: 1rem;
   text-decoration: none;
   @include base-shadow;
+  transition: ease-in-out 200ms;
 
   &:hover {
     @include hover-shadow;
