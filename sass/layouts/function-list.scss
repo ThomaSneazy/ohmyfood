@@ -66,3 +66,33 @@
   }
 
 }
+
+@media only screen and (min-width : 768px){
+  .number-content{
+    display: flex;
+  }
+  .function-list_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & a{
+      position: relative;
+    }
+
+    .function-list-item {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+
+      .list-content {
+        width: -moz-available;
+        max-width: 320px;
+      }
+      .function-text-content {
+        white-space: nowrap;
+      }
+    }
+  }
+}
