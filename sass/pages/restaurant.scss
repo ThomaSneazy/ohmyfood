@@ -92,6 +92,8 @@
 
       &:hover {
         @include hover-shadow;
+        filter: brightness(125%);
+        transition: ease-in-out 200ms;
       }
     }
   }
