@@ -1,4 +1,4 @@
-@import "../utils/box-shadow.scss";
+@import "../utils/mixin.scss";
 @import "../utils/variables.scss";
 
 .function-list_section{
@@ -80,13 +80,20 @@
     align-items: center;
     & a{
       position: relative;
+      // width: 100%;
+    }
+    .container-function-list{
+      max-width: 1080px;
+      width: 100%;
     }
 
     .function-list-item {
       flex-direction: row;
       flex-wrap: wrap;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
+      max-width: 1080px;
+      width: 100%;
 
       .list-content {
         width: -moz-available;

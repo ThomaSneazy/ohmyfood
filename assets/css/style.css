@@ -105,6 +105,8 @@ nav {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.347);
   transition: 200ms ease;
   transform: scale(1.01);
+  transition: ease-in-out 200ms;
+  filter: brightness(125%);
 }
 
 .restaurants_section {
@@ -187,14 +189,15 @@ nav {
     justify-content: center;
   }
   .restaurants_section .container {
-    max-width: 830px;
+    max-width: 1080px;
     width: 100%;
   }
   .restaurants_section .container .restaurant-card_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 1rem;
+    column-gap: 6rem;
+    row-gap: 3rem;
   }
 }
 .function-list_section {
@@ -274,11 +277,17 @@ nav {
   .function-list_section a {
     position: relative;
   }
+  .function-list_section .container-function-list {
+    max-width: 1080px;
+    width: 100%;
+  }
   .function-list_section .function-list-item {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    max-width: 1080px;
+    width: 100%;
   }
   .function-list_section .function-list-item .list-content {
     width: -moz-available;

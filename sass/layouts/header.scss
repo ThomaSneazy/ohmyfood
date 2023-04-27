@@ -1,5 +1,4 @@
-@import "../utils/box-shadow.scss";
-@import "../utils/hover-shadow.scss";
+@import "../utils/mixin.scss";
 @import "../utils/variables.scss";
 
 
@@ -53,7 +52,7 @@ nav {
 }
 
 .button {
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: linear-gradient(193.33deg, $purple -11.44%, $pink 123.93%);
   border-radius: 50px;
   padding: 1rem 1.5rem 1rem 1.5rem;
   color: $white;
@@ -64,5 +63,8 @@ nav {
 
   &:hover {
     @include hover-shadow;
+    // background: linear-gradient(193.33deg, #a769f3 -11.44%, #fa94dd 123.93%);
+    transition: ease-in-out 200ms;
+    filter: brightness(125%);
   }
 }

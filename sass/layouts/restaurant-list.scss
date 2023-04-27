@@ -1,5 +1,4 @@
-@import "../utils/box-shadow.scss";
-@import "../utils/hover-shadow.scss";
+@import "../utils/mixin.scss";
 @import "../utils/variables.scss";
 
 
@@ -92,14 +91,16 @@
     justify-content: center;
 
     .container {
-      max-width: 830px;
+      max-width: 1080px;
       width: 100%;
+      // padding: 1.225rem;
 
       .restaurant-card_container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        gap: 1rem;
+        column-gap: 6rem;
+        row-gap: 3rem;
       }
     }
   }
